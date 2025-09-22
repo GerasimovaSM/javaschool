@@ -1,0 +1,21 @@
+package com.example.dungeon.model;
+
+public abstract class Item {
+    private final String name;
+    private final String type;
+
+    protected Item(String name, String type) {
+        this.name = name;
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public abstract void apply(Player player);
+}
